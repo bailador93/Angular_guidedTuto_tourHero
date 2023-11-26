@@ -1,0 +1,25 @@
+ .head_title_project_container {
+    margin-top: 2% !important;
+    background-color:#62d690;
+    color:  #1b3f29;
+    padding: 1%;
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    width: 50%;
+    margin: 0 auto;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+ }
+
+ .content_app {
+    background-color: #0d1219;
+    padding: 2%;
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid #030406;
+    min-height: 100vh;
+    margin-bottom: 5%;
+ }
+
+ 

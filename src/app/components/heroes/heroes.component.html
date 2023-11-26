@@ -1,0 +1,76 @@
+<div class="heroe_main_container">
+    <img width="100" src="{{heroe_main.IMG}}" />
+    <div>
+        <p><b>Id:</b> {{heroe_main.id}}</p>
+        <p><b>Name:</b> {{heroe_main.name | uppercase}}</p>
+        <p><b>URL:</b> <a href="{{heroe_main.URL}}" target="_blank">LinkedIn</a></p>
+
+        <div style="margin-top: 3%;"></div>
+        <label><b>Heroe name</b> <input [(ngModel)]="heroe_main.name_heroe" disabled /></label>
+    </div>
+</div>
+
+<div class="heroe_main_container2">
+
+    <div class="box1">
+        <div class="title_h4">
+            <h4>My HEROES</h4>
+        </div>
+
+        <div>
+            <ul class="heroes_list_container">
+                <li *ngFor="let heroe of heroes" [class.selected]="heroe === heroe_selected">
+                    <div (click)="onViewDetailHeroe(heroe)">
+                        <p style="padding:3%;">{{heroe.id + 1}} {{")"}} <b>{{heroe.name_heroe}}</b></p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="box2">
+
+        <div *ngIf="isEmpty">
+            The field is empty
+        </div>
+
+        <div *ngIf="isListEmpty">
+            Result not found
+        </div>
+
+        <div style="margin-bottom: 3%;">
+            <label><input class="input_heroe" placeholder="Search by name Heroe" [(ngModel)]="search_heroe" /></label>
+            <button type="button" (click)="onBtnSearchHeroe()">Search</button>
+        </div>
+
+        <div  *ngIf="search_heroe && result_search.length > 0">
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Heroe</th>
+                </tr>
+                <tr *ngFor="let heroe of result_search" >
+                    <td>{{heroe.id + 1}}</td>
+                    <td>{{heroe.name}}</td>
+                    <td>{{heroe.name_heroe}}</td>
+                </tr>
+            </table>
+        </div>
+
+        <div *ngIf="result_search.length === 0 && heroe_selected ">
+            <table>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Heroe</th>
+                </tr>
+                <tr>
+                    <td>{{heroe_selected.id + 1}}</td>
+                    <td>{{heroe_selected.name}}</td>
+                    <td>{{heroe_selected.name_heroe}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

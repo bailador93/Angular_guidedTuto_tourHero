@@ -1,0 +1,123 @@
+.heroe_main_container {
+    padding: 1%;
+    background-color: #294354;
+    width: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    color: #a1a1a1;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+.heroe_main_container img {
+    width: 30%;
+    padding: 2%;
+}
+
+.heroe_main_container div {
+    padding: 2%;
+    width: 50%;
+}
+
+.heroe_main_container div p {
+    margin-bottom: 3%;
+}
+
+.heroe_main_container div p a{
+    color: beige;
+}
+
+.heroe_main_container2 {
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(0, 0, 0);
+}
+
+.heroe_main_container2 .box1 {
+    width: 30%;
+    padding: 2%;
+}
+
+.heroe_main_container2 .box1 .title_h4{
+    text-align: center;
+    padding: 2%;
+    color: beige;
+    text-transform: uppercase;
+}
+
+.heroe_main_container2 .box2 {
+    background-color: rgb(232, 232, 232);
+    width: 50%;
+    padding: 2%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.heroe_main_container2 .box2 div {
+    text-align: center;
+}
+
+.heroe_main_container2 .box2 div .input_heroe {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 0.5%;
+    border-radius: 5%;
+    background-color: rgba(157, 222, 125, 0.2);
+    text-align: center;
+}
+
+.heroes_list_container {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.heroes_list_container li {
+    width: 100%;
+    margin-bottom: 1%;
+    padding: 1%;
+}
+
+.heroes_list_container li div {
+    padding: 5%;
+    background-color: rgba(235, 33, 33, 0.635);
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    color: rgb(255, 207, 207);
+}
+
+.heroes_list_container li div:hover{
+    cursor: pointer;
+    background-color: rgba(120, 12, 12, 0.635);
+}
+
+.heroes_list_container li.selected{
+    background-color: rgba(120, 12, 12, 0.635);
+    border: 3px solid black;
+    pointer-events: none;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+tr th{
+    text-align: center;
+}
+
