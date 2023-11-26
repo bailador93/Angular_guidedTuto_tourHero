@@ -1,9 +1,103 @@
 /* You can add global styles to this file, and also import other style files */
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     background-color: #253548;
 }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .content_app {
+        min-width: 90%;
+    }
+
+    .head_title_project_container {
+        min-width: 90%;
+        border-top-left-radius: 30% !important;
+        border-top-right-radius: 30% !important;
+    }
+
+    .heroe_main_container {
+        min-width: 90%;
+        margin: auto;
+    }
+
+    .heroe_main_container2 .box1 {
+        min-width: 80%;
+        padding: 2%;
+        margin: 0 auto;
+    }
+
+    .heroe_main_container2 .box2 {
+        min-width: 80%;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .content_app {
+        min-width: 90%;
+    }
+
+    .head_title_project_container {
+        min-width: 90%;
+        border-top-left-radius: 30% !important;
+        border-top-right-radius: 30% !important;
+    }
+
+    .heroe_main_container {
+        min-width: 90%;
+        margin: auto;
+    }
+
+    .heroe_main_container2 .box1 {
+        min-width: 80%;
+        padding: 2%;
+        margin: 0 auto;
+    }
+
+    .heroe_main_container2 .box2 {
+        min-width: 80%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .content_app {
+        min-width: 80%;
+    }
+
+    .head_title_project_container {
+        min-width: 50%;
+        border-top-left-radius: 50% !important;
+        border-top-right-radius: 50% !important;
+    }
+
+    .heroe_main_container {
+        min-width: 35%;
+        margin: 0;
+    }
+
+    .heroe_main_container2 .box1 {
+        min-width: 30%;
+        padding: 2%;
+        margin: 0 auto;
+    }
+
+    .heroe_main_container2 .box2 {
+        min-width: 50%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
